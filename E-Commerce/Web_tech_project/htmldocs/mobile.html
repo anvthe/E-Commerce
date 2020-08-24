@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Something.com">
+<title>Something.com</title>
+<style type="text/css">
+* { padding: 0; margin: 0; }
+body { font-family: sans-serif;  }
+a { text-decoration: none; color: #00A5EC; }
+li { list-style-type: none; }
+header { 
+	width: 100%; 
+	height: 50px; 
+	margin: auto;
+	border-bottom: 1px solid #EEE;
+}
+#brand {
+	float: left;
+	line-height: 50px;
+	color: #E5DAC0;
+	font-size: 25px;
+	font-weight: bolder;
+    outline-width: medium;
+}
+#stext {
+	float: left;
+	line-height: 35px;
+    outline-width:inherit;
+	color: #008080;
+	font-size: 20px;
+	font-weight: bolder;
+    border-bottom: 1px solid #00CED1;
+    
+}
+#text {
+	float: right;
+	line-height: 35px;
+    outline-width:medium;
+	color: #008080;
+	font-size: 30px;
+	font-weight: bold;
+    border-bottom: 2px solid #00CED1;
+    
+}
+#Btext {
+	float: right;
+	line-height: 35px;
+    outline-width:medium;
+	color: #008080;
+	font-size: 15px;
+	font-weight: bold;
+    border-bottom: 2px solid #00CED1;
+    
+}
+
+#ctext {
+	float: center;
+	line-height: 35px;
+    outline-width:medium;
+	color: #008080;
+	font-size: 30px;
+	font-weight: bold;
+    border-bottom: 2px solid #00CED1;
+    
+}
+nav { width: 100%; text-align: center; }
+nav a { 
+	display: block; 
+	padding: 15px 0;
+	border-bottom: 1px solid #f4042c;
+	color: #F0EADC;
+}
+nav a:hover { background: #0c09e5; color: #FFF; }
+nav li:last-child a { border-bottom: none; }
+/*-----------------------------------------*/
+.button {
+    background-color: ##f4042c; /* Green */
+    border: none;
+    color: white;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+}
+.menu {
+	width: 240px;
+	height: 100%;
+	position: absolute;
+	background: #f4042c;
+	left: -240px;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	
+}
+.menu-icon {
+	padding: 10px 20px;
+	background: #E5DAC0;
+	color: #3e9861;
+	cursor: pointer;
+	float: left;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+#menuToggle { display: none; }
+#menuToggle:checked ~ .menu { position: none; left: 0; }
+</style>
+</head>
+<form>
+<body>
+
+<input type="checkbox" id="menuToggle">
+<label for="menuToggle" class="menu-icon">&#9776; </label>
+
+<header>
+<div id="brand">Something &nbsp; &nbsp;&nbsp;&nbsp;</div>
+    <input type="text" name="searchbox" id="stext" >
+    <input type="submit" value="Search Iteam" id ="stext">
+    <input type="submit" value="Login" id ="text">
+    <input type="submit" value="Cart" id ="text">
+		<input type="submit" value="Home" id ="text" formaction="Homepage.html">
+    
+   
+</header>
+
+<nav class="menu">
+    <ul>
+        <li><a href="Clothes.html">Clothes</a></li>
+        <li><a href="Computer.html">Computer</a></li>
+        <li><a href="Food.html">Food</a></li>
+        <li><a href="KIdsiteam.html">Kid's Item</a></li>
+        <li><a href="Electronics.html">Electronics</a></li>
+        <li><a href="giftiteam.html">Gift Item</a></li>
+    </ul>
+</nav>
+            <label id ="stext">Category</label>
+        <table align="right" height="300" width="1110">
+   
+    <tr colspan="3">
+        
+        <td colspan="3">
+            <h1 align="center">Computer</h1>
+        </td>        
+    </tr>
+    <tr>
+        <td>
+         <img src="../pizza.jpg" height="100" width="100"><br/>
+            <h2 align="left">PIzza</h2><br/>
+            <p> Price :270tk</p><br/>
+            <input type="submit" value="Add This Iteam" name="addproduct">
+           
+        </td>
+        <td>
+            <img src="../burger.jpg" height="100" width="100"><br/>
+            <h2><a href="Clothes.html">Hamburger </a></h2><br/>
+            <p> Price : 200 tk</p><br/>
+            <input type="submit" value="Add This Iteam" name="addproduct">
+        </td>
+        
+       <td>
+        <img src="../burger.jpg" height="100" width="100"><br/>
+            <h2>Hamburger </h2><br/>
+            <p> Price : 200 tk</p><br/>
+            <input type="submit" value="Add This Iteam" name="addproduct">
+        
+        
+    </td>
+    </tr>        
+   
+    
+        </table>
+        
+</body>
+</form>
+</html>
